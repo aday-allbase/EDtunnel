@@ -394,19 +394,6 @@ async function getAllConfigVless(hostName) {
             <button class="button" onclick="showContent('clash')">List Clash</button>
         </div>
         <center><a href="https://t.me/bexnxx" class="button">Source</a> <a href="https://t.me/noir7r" class="button">Modded</a></center><br>
-        <div class="config-section">
-        <strong>LIST WILLCARD : </strong><br>
-        <br>
-        \u2730 ava.game.naver.com<br>
-        \u2730 graph.instagram.com<br>
-        \u2730 quiz.int.vidio.com<br>
-        \u2730 live.iflix.com<br>
-        \u2730 support.zoom.us<br>
-        \u2730 blog.webex.com<br>
-        \u2730 cache.netflix.com<br>
-        \u2730 investors.spotify.com<br>
-        \u2730 zaintest.vuclip.com<br>
-        </div>
         <hr class="config-divider" />
         <div id="vless" class="content active">
             ${vlessConfigs}
