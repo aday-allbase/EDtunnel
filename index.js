@@ -19,7 +19,7 @@ const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/
 const PROXY_BANK_URL = "https://raw.githubusercontent.com/aday-allbase/EDtunnel/refs/heads/main/proxyList.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
-const PROXY_HEALTH_CHECK_API = "https://check.comvan.workers.dev";
+const PROXY_HEALTH_CHECK_API = "https://check.comvan.workers.dev/check?ip=";
 const CONVERTER_URL = "https://api.foolvpn.me/convert";
 const DONATE_LINK = "https://trakteer.id/dickymuliafiqri/tip";
 const PROXY_PER_PAGE = 24;
@@ -896,7 +896,7 @@ function safeCloseWebSocket(socket) {
 }
 
 async function checkProxyHealth(proxyIP, proxyPort) {
-  const req = await fetch(`${PROXY_HEALTH_CHECK_API}/check?ip=`);
+  const req = await fetch(`${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}:${proxyPort}`);
   return await req.json();
 }
 
